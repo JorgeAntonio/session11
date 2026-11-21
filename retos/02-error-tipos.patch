@@ -1,0 +1,13 @@
+diff --git a/src/app/clientes/clientes-form.tsx b/src/app/clientes/clientes-form.tsx
+index ea49777..b52ece4 100644
+--- a/src/app/clientes/clientes-form.tsx
++++ b/src/app/clientes/clientes-form.tsx
+@@ -61,7 +61,7 @@ export default function ClientesForm() {
+         {clientes.map((c) => (
+           <li key={c.ruc} className="flex justify-between py-2">
+             <span>{c.nombre}</span>
+-            <span className="text-sm uppercase">{calcularSegmento(c.montoCompras)}</span>
++            <span className="text-sm uppercase">{calcularSegmento(c.nombre)}</span>
+           </li>
+         ))}
+       </ul>
