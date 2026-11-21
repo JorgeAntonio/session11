@@ -1,0 +1,13 @@
+diff --git a/src/app/clientes/clientes-form.tsx b/src/app/clientes/clientes-form.tsx
+index ea49777..0d0e6a1 100644
+--- a/src/app/clientes/clientes-form.tsx
++++ b/src/app/clientes/clientes-form.tsx
+@@ -45,7 +45,7 @@ export default function ClientesForm() {
+           <input name="montoCompras" type="number" className="rounded border p-2" />
+         </label>
+         <button type="submit" className="rounded bg-black p-2 text-white">
+-          Guardar cliente
++          Registrar cliente
+         </button>
+       </form>
+ 
