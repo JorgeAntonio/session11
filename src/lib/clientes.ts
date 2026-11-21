@@ -20,7 +20,7 @@ export type Segmento = "nuevo" | "frecuente" | "vip";
 export function calcularSegmento(montoCompras: number): Segmento {
   if (montoCompras < 0) throw new Error("Monto negativo");
   if (montoCompras >= 10000) return "vip";
-  if (montoCompras >= 1000) return "frecuente";
+  if (montoCompras > 1000) return "frecuente";
   return "nuevo";
 }
 
