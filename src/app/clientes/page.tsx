@@ -9,7 +9,9 @@ export const metadata: Metadata = {
 export default function ClientesPage() {
   return (
     <main className="mx-auto w-full max-w-2xl p-8">
-      <h1 className="mb-6 text-2xl font-bold">Clientes</h1>
+      <h1 className="mb-6 text-3xl font-black tracking-tight text-violet-700 dark:text-violet-300">
+        Clientes
+      </h1>
       <ClientesForm />
     </main>
   );

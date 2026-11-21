@@ -43,4 +43,10 @@ describe("validarCliente", () => {
     const r = validarCliente({ ...valido, ruc: "2012345" });
     expect(r.ok).toBe(false);
   });
+
+  it("rechaza un monto de compras negativo", () => {
+    const r = validarCliente({ ...valido, montoCompras: -1 });
+    expect(r.ok).toBe(false);
+    if (!r.ok) expect(r.errores).toContain("El monto no puede ser negativo");
+  });
 });
