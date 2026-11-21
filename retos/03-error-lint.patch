@@ -1,0 +1,12 @@
+diff --git a/src/app/clientes/clientes-form.tsx b/src/app/clientes/clientes-form.tsx
+index ea49777..36d1387 100644
+--- a/src/app/clientes/clientes-form.tsx
++++ b/src/app/clientes/clientes-form.tsx
+@@ -6,6 +6,7 @@ import { calcularSegmento, validarCliente, type Cliente } from "@/lib/clientes";
+ export default function ClientesForm() {
+   const [clientes, setClientes] = useState<Cliente[]>([]);
+   const [errores, setErrores] = useState<string[]>([]);
++  const debug: any = clientes;
+ 
+   function onSubmit(e: React.FormEvent<HTMLFormElement>) {
+     e.preventDefault();
